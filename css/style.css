@@ -1,0 +1,53 @@
+:root{
+    --blue-color:#17a2b8;
+    --back-color:#24353f;
+}
+
+body{
+    background-color:var(--back-color);
+}
+.box{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+h1{
+    color:var(--blue-color) ;
+}
+p{
+    color: white;
+}
+p a{
+
+    text-decoration: none;
+}
+p a:hover{
+
+    text-decoration: underline;
+    color: white;
+    
+}
+button{
+    background-color: var(--back-color);
+    border: 2px solid var(--blue-color);
+    color: var(--blue-color);
+}
+button:hover{
+    background-color: var(--blue-color);
+    color: white;
+}
+.form-control{
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.inputs input{
+    background-color: transparent;
+    color: white;
+}
+.group{
+    box-shadow: rgb(0, 0, 0) -5px 2px 54px -9px;
+}
+.navbar-brand {
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}

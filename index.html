@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <span class="d-none" id="username"></span>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary group d-none" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-4" href="#">Smart Login</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link btn btn-outline-warning " href="#" onclick="logout()">LogOut</a>
+              </li>
+             
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    <main>
+        <div class="container  text-center my-5  ">
+            <div  id="login-page" class=" box w-75 p-5  m-auto d-none">
+                 <div class="header mb-4">
+                    <h1 >Smart Login System</h1>
+                 </div>
+                 <div class="inputs flex-column p-3">
+                    <input class="w-100 mb-3 form-control" type="email" placeholder="Enter your Email" id="login_email" name="email">
+                    <input class="w-100 mb-3 form-control "  type="password" placeholder="Enter your password" id="login_pass" name="password">
+                    <p id="incorrect"></p>
+                    <button class="w-100 rounded-2 p-1 " onclick="Login()">Login</button>
+                 </div>
+                 <p>Do you have an account? <a href="#" class=" text-white" onclick="SignUpA()">Sign Up</a></p>
+            </div>
+            <div id="signup-page" class=" box w-75 p-5  m-auto ">
+                <div class="header mb-4">
+                   <h1 >Smart Login System</h1>
+                </div>
+                <div class="inputs flex-column p-3">
+                    <input class="w-100 mb-3 form-control" type="text" placeholder="Enter your Name" id="signup-name" name="email">
+                   <input class="w-100 mb-3 form-control" type="email" placeholder="Enter your Email" id="signup-email" name="email">
+                   <input class="w-100 mb-3 form-control "  type="password" placeholder="Enter your password" id="signup-pass" name="password">
+                   
+                   <p id="done"></p>
+
+                   <button class="w-100 rounded-2 p-1 " onclick="SignUp()">Sign Up</button>
+                </div>
+                <p> You have an account? <a href="#" class=" text-white" onclick="SignIn()">Signin</a></p>
+           </div>
+
+           <div id="homepage" class=" box w-75 p-5  m-auto d-none">
+             <h1 id="userName" >Welcome</h1>
+           </div>
+            
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
